@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-letras = "abcdefghijklmnopqrstuvwxyz"
-for letra in letras:
-    print(f"{letra}")
+for letra in range(97, 123):
+    print(chr(letra), end='')
