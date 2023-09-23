@@ -7,6 +7,6 @@ if __name__ == "__main__":
     elif x == 1:
         print(f"{x} arguments:")
     else: 
-        print(f"{x} arguments")
+        print(f"{x} arguments:")
     for cantidad in range(x):
         print("{}: {}".format(cantidad + 1, sys.argv[cantidad +1]))
