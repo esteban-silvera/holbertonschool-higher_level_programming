@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys
-    x = len(sys.argv) - 1
+    from sys import argv
+    x = len(argv) - 1
     if x == 0:
         print(f"{x} arguments.")
     elif x == 1:
@@ -9,4 +9,4 @@ if __name__ == "__main__":
     else: 
         print(f"{x} arguments:")
     for cantidad in range(x):
-        print("{}: {}".format(cantidad + 1, sys.argv[cantidad +1]))
+        print("{}: {}".format(cantidad + 1, argv[cantidad +1]))
