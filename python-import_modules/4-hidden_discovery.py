@@ -5,3 +5,4 @@ if __name__ == "__main__":
     for x in nombres:
         if x[:2] != "__":
             print(f"{x}")
+            
