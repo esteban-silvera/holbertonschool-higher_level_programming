@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    nuevo = 0
+    nuevo = 0, 0
     if len(tuple_a) < 2:
         tuple_a = tuple_a + nuevo
     if len(tuple_b) < 2:
