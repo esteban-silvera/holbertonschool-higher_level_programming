@@ -4,4 +4,7 @@ def only_diff_elements(set_1, set_2):
     for elemento in set_1:
         if elemento not in set_2:
             lista.append(elemento)
+    for elemento in set_2:
+        if elemento not in set_1:
+            lista.append(elemento)
     return lista
