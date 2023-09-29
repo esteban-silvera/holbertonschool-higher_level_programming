@@ -3,7 +3,7 @@ def safe_print_division(a, b):
     try:
         mod = a / b
     except ZeroDivisionError:
-        return None
+        mod = None
     finally:
         print("Inside result: {}".format(mod))
         return mod
