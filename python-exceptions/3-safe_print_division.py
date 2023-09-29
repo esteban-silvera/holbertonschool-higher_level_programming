@@ -6,4 +6,4 @@ def safe_print_division(a, b):
         return None
     finally:
         print("Inside result: {}".format(mod))
-    return mod
+        return mod
