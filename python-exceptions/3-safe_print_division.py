@@ -3,7 +3,7 @@ def safe_print_division(a, b):
     try:
         if isinstance(a, int) and isinstance(b, int):
             mod = a / b
-    except:
+    except IndexError:
         return None
     finally:
         print("Inside result: {}".format(mod))
