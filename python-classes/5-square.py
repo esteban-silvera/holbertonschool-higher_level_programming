@@ -26,8 +26,8 @@ class Square:
         return areovic
 
     def my_print(self):
-        lado = self
-        for x in range(self):
-            for n in range(lado):
-                print("#", end="")
-            print()
+        for x in range(0, self.__size):
+            [print("#", end="") for n in range(self.__size)]
+            print("")
+        if self.__size == 0:
+            print("")
