@@ -5,7 +5,11 @@
 """
 class Square:
     """solo un cuadrado mi rey"""
-    pass
+
+    def size(self):
+        lado = self.__size
+        return lado
+
     def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -14,10 +18,6 @@ class Square:
         else:
             self.__size = size
 
-    def size(self):
-        tamaño = self.__size
-        return tamaño
-    
     def area(self):
         areovic = self.__size ** 2
         return areovic
