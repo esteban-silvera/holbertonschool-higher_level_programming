@@ -32,4 +32,6 @@ class Square:
         for x in range(0, self.__size):
             for n in range(lado):
                 print("#", end="")
-            print()
+            print("")
+        if self.__size == 0:
+            print("")
