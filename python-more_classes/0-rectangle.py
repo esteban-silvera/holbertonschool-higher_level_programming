@@ -3,6 +3,6 @@
 	Module 0-rectangle
 	Defines rectangle class
 """
-class Square:
+class Rectangle:
     """solo un rectangulo mi rey"""
     pass
