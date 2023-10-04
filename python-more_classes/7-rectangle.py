@@ -6,12 +6,13 @@
 class Rectangle:
     """solo un rectangulo mi rey"""
     number_of_instances = 0
-    print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
         Rectangle.number_of_instances += 1
 
+    print_symbol = "#"
     @property
     def width(self):
         ancho = self.__width
