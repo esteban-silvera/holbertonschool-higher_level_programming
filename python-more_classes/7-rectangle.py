@@ -6,7 +6,7 @@
 class Rectangle:
     """solo un rectangulo mi rey"""
     number_of_instances = 0
-    simbolo = "#"
+    print_symbol = "#"
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
@@ -52,16 +52,13 @@ class Rectangle:
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
-    def print_symbol(sim):
-        Rectangle.simbolo = sim
-
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
             rectangle_str = ""
             for _ in range(self.__height):
-                rectangle_str += Rectangle.simbolo * self.__width + "\n"
+                rectangle_str += Rectangle.print_symbol * self.__width + "\n"
             return rectangle_str[:-1] 
     
     def __del__(self):
