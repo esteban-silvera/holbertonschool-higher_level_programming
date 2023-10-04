@@ -6,11 +6,11 @@
 class Rectangle:
     """solo un rectangulo mi rey"""
     def __init__(self, width=0, height=0):
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     def width(self):
-        ancho = self.width
+        ancho = self.__width
         return ancho
     
     def width(self, value):
@@ -21,7 +21,7 @@ class Rectangle:
         self.width = value
 
     def height(self):
-        alto = self.height
+        alto = self.__height
         return alto
 
     def height(self, value):
