@@ -13,13 +13,25 @@ class Rectangle:
         self.height = height
 
     def width(self):
-        ancho = self.__width
+        ancho = self.width
         return ancho
     
     def width(self, value):
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.width = value
 
     def height(self):
         alto = self.height
         return alto
 
     def height(self, value):
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.height = value
