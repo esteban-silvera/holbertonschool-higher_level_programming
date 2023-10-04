@@ -5,11 +5,8 @@
 """
 class Rectangle:
     """solo un rectangulo mi rey"""
-    pass
-    def __init__(self, width=0):
+    def __init__(self, width=0, height=0):
         self.width = width
-
-    def __init__(self, height=0):
         self.height = height
 
     def width(self):
