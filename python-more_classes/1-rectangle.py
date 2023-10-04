@@ -9,10 +9,12 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
+    @property
     def width(self):
-        ancho = self.width
+        ancho = self.__width
         return ancho
-    
+
+    @property.setter
     def width(self, value):
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -20,10 +22,12 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.width = value
 
+    @property
     def height(self):
-        alto = self.height
+        alto = self.__height
         return alto
 
+    @property.setter
     def height(self, value):
         if type(value) is not int:
             raise TypeError("height must be an integer")
