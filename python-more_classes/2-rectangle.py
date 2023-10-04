@@ -40,5 +40,8 @@ class Rectangle:
         return aerovic
 
     def perimeter(self):
-        nerimetro = 2 * (self.__height * self.__width)
-        return nerimetro
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        else:
+            nerimetro = 2 * (self.__height * self.__width)
+            return nerimetro
