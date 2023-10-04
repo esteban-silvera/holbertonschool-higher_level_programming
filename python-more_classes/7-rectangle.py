@@ -54,7 +54,6 @@ class Rectangle:
 
     def print_symbol(sim):
         Rectangle.simbolo = sim
-        return Rectangle.simbolo
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
