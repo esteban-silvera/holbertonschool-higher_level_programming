@@ -50,7 +50,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             print("")
         else:
-            for x in range(0, self.__height):
-                for n in range(0, self.__width):
+            for x in range(0, self.__width):
+                for n in range(0, self.__height):
                     print("#", end="")
                 print("")
