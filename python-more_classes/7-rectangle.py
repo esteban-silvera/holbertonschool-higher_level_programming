@@ -11,8 +11,8 @@ class Rectangle:
         self.__width = width
         self.__height = height
         Rectangle.number_of_instances += 1
-
     print_symbol = "#"
+
     @property
     def width(self):
         ancho = self.__width
@@ -59,7 +59,7 @@ class Rectangle:
         else:
             rectangle_str = ""
             for _ in range(self.__height):
-                rectangle_str += str(Rectangle.print_symbol) * self.__width + "\n"
+                rectangle_str += str(f"{self.print_symbol}") * self.__width + "\n"
             return rectangle_str[:-1] 
     
     def __del__(self):
