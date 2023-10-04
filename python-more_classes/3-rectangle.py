@@ -48,9 +48,9 @@ class Rectangle:
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
-            print("")
+            return ""
         else:
-            for x in range(0, self.__width):
-                for n in range(0, self.__height):
-                    print("#", end="")
-                print("")
+            rectangle_str = ""
+            for _ in range(self.__height):
+                rectangle_str += "#" * self.__width + "\n"
+            return rectangle_str[:-1] 
