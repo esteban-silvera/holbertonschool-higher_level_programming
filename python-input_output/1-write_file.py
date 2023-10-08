@@ -3,8 +3,8 @@
 def write_file(filename="", text=""):
     """only define a functions"""
     x = 0
-    with open(filename, encoding="utf-8") as content:
-        content.write(text)
-        for line in content:
+    with open(filename, mode="w", encoding="utf-8") as file:
+        file.write(text)
+        for char in text:
             x += 1
-        return x
+    return x
