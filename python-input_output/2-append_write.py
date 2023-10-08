@@ -5,8 +5,5 @@ def append_write(filename="", text=""):
     x = 0
     with open(filename, mode="w", encoding="utf-8") as file:
         file.write(text)
-        texto = ""
-        for char in text:
-            texto += char
-            x += 1
-    return x, texto
+        x = len(text)
+    return x
