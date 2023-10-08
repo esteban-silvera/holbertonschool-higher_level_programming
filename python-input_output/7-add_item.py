@@ -4,7 +4,10 @@ import json
 import sys
 import os
 save_to_json_file = __import__("5-save_to_json_file.py").save_to_json_file
+"""only define a functions"""
+
 load_from_json_file = __import__("6-load_from_json_file.py").load_from_json_file
+"""only define a functions"""
 
 def main():
     """only define a functions"""
