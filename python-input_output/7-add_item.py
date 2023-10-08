@@ -11,6 +11,7 @@ load_from_json_file = __import__("6-load_from_json_file.py").load_from_json_file
 
 filename = "add_item.json"
 if not os.path.exists(filename):
+    """only define a functions"""
     save_to_json_file([], filename)
 my_list = load_from_json_file(filename)
 my_list.extend(sys.argv[1:])
