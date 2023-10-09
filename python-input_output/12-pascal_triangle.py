@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """only define a functions"""
 def pascal_triangle(n):
+    """only define a functions"""
     listorti = [[1]]
     if n <= 0:
         return []
