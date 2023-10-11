@@ -3,6 +3,7 @@
 from models.base import Base
 class Rectangle(Base):
     """solo un rectangulo mi rey"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.width = width
@@ -13,8 +14,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        altura = self.__height
-        return altura
+        return self.__height
 
     @height.setter
     def def_height(self, height):
@@ -27,8 +27,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        ancho = self.__width
-        return ancho
+        return self.__width
 
     @width.setter
     def def_width(self, width):
@@ -41,8 +40,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        y = self.__y
-        return y
+        return self.__y
 
     @y.setter    
     def def_y(self, y):
@@ -55,8 +53,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        x = self.__x
-        return x
+        return self.__x
 
     @x.setter
     def def_x(self, x):
