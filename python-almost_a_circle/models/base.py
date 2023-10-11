@@ -2,8 +2,8 @@
 """solo un rectangulo mi rey"""
 class Base:
     """solo un rectangulo mi rey"""
-    __nb_objects = 0
     def __init__(self, id=None):
+        self.__nb_objects = 0
         if id is not None:
             self.__id = id
         else:
