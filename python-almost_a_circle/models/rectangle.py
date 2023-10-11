@@ -5,15 +5,15 @@ class Rectangle(Base):
     """solo un rectangulo mi rey"""
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
 
     @property
     def height(self):
-        altura = self.__height
+        altura = self.height
         return altura
 
     @height.setter
@@ -27,7 +27,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        ancho = self.__width
+        ancho = self.width
         return ancho
 
     @width.setter
@@ -41,7 +41,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        y = self.__y
+        y = self.y
         return y
 
     @y.setter    
@@ -55,7 +55,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        x = self.__x
+        x = self.x
         return x
 
     @x.setter
