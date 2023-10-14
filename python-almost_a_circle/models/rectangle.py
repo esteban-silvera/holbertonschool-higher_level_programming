@@ -61,8 +61,11 @@ class Rectangle(Base):
 
     def display(self):
         """imprime el rectangulo"""
-        for forma in range(self.height):
-            print("#" * self.width)
+        for rest in range(self.y):
+            print()  # Print empty lines for y offset
+
+        for rest in range(self.height):
+            print(' ' * self.x + '#' * self.width) 
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
