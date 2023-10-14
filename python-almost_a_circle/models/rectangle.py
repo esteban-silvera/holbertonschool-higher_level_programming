@@ -4,7 +4,6 @@ from models.base import Base
 
 class Rectangle(Base):
     """solo un rectangulo mi rey"""
-
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.width = width
@@ -15,7 +14,6 @@ class Rectangle(Base):
     @property
     def height(self):
         return self.__height
-
     @height.setter
     def height(self, height):
         if not isinstance(height, int):
@@ -27,7 +25,6 @@ class Rectangle(Base):
     @property
     def width(self):
         return self.__width
-
     @width.setter
     def width(self, width):
         if not isinstance(width, int):
@@ -39,7 +36,6 @@ class Rectangle(Base):
     @property
     def y(self):
         return self.__y
-
     @y.setter    
     def y(self, y):
         if not isinstance(y, int):
@@ -51,7 +47,6 @@ class Rectangle(Base):
     @property
     def x(self):
         return self.__x
-
     @x.setter
     def x(self, x):
         if not isinstance(x, int):
@@ -59,3 +54,6 @@ class Rectangle(Base):
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
+
+    def area(self):
+        return self.__height * self.__width
