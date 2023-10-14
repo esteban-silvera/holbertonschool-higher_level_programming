@@ -63,3 +63,6 @@ class Rectangle(Base):
         """imprime el rectangulo"""
         for forma in range(self.height):
             print("#" * self.width)
+
+    def __str__(self):
+        print("[Rectangle] ({}) {}/{} - {}/{}".format(self.__init__(id), self.__x, self.__y, self.__width, self.__height))
