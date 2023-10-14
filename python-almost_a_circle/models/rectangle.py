@@ -60,6 +60,7 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
+        """imprime el rectangulo"""
         for alto in range(self.__y):
             for ancho in range(self.__x):
                 print("#",end="")
