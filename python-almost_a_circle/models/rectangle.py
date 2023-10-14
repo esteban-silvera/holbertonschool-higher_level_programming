@@ -59,3 +59,7 @@ class Rectangle(Base):
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
+
+    def area(self):
+        aerovic = self.__height * self.__width
+        return aerovic
