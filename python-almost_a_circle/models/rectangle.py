@@ -61,5 +61,4 @@ class Rectangle(Base):
         self.__x = x
 
     def area(self):
-        aerovic = self.__height * self.__width
-        return aerovic
+        return self.length * self.width
