@@ -62,4 +62,4 @@ class Rectangle(Base):
     def display(self):
         for alto in range(self.__y):
             for ancho in range(self.__x):
-                print("#"end="")
+                print("#",end="")
