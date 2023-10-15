@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """solo un rectangulo mi rey"""
 import json
+import os
 class Base:
     """solo un rectangulo mi rey"""
     __nb_objects = 0
@@ -34,3 +35,26 @@ class Base:
         if not json_string:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """xreatineitor 60324.com."""
+        if cls.__name__ == "Rectangle":
+            instance = cls(1, 1)
+        elif cls.__name__ == "Square":
+            instance = cls(1)
+        instance.update(**dictionary)
+        return instance
+
+    @classmethod
+    def load_from_file(cls):
+        """cargamela todaa paaaa."""
+        filename = f"{cls.__name__}.json"
+        instances = []
+        if not os.path.exists(filename):
+            return instances
+        with open(filename, 'r') as file:
+            json_string = file.read()
+            dictionaries = cls.from_json_string(json_string)
+            instances = [cls.create(**dictionary) for dictionary in dictionaries]
+        return instances
