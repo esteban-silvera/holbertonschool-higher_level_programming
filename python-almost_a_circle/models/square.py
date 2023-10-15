@@ -41,6 +41,7 @@ class Square(Rectangle):
                     self.y = value
 
     def to_dictionary(self):
+        """mama mia dictionario guiño amario monstro"""
         return {
             "id": self.id, "size": self.width,
             "x": self.x, "y": self.y
