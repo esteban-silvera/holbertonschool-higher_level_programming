@@ -1,23 +1,23 @@
-# script that lists all databases
+-- script that lists all databases
 
 import mysql.connector
 
-# coment
+--  coment
 cnx = mysql.connector.connect(
   host="localhost",
   user="tu_nombre_de_usuario",
   password="tu_contraseña"
 )
 
-# coment
+-- coment
 cursor = cnx.cursor()
 
-# coment
+-- coment
 cursor.execute("SHOW DATABASES")
 
-# coment
+-- coment
 for db in cursor:
   print(db[0])
 
-# coment
+-- coment
 cnx.close()
