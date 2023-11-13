@@ -1,3 +1,5 @@
+# script that lists all databases
+
 import mysql.connector
 
 # coment
